@@ -60,8 +60,12 @@ def normalised_histogram_binning(hist, M=64, L=256):
         for j in C:
             norm_hist[i] += hist[j] # i번째 counter 안의 값들을 합침 (C0:hist 0-7까지의 합, C1:8-15까지의 합)
     norm_hist = (norm_hist / norm_hist.max()) * 100 # 값을 0-100 사이의 값으로 변환
+
     for i in range(0, M):
-        if norm_hist[i] < 0.15:
+
+        print(norm_hist[i])
+
+        if norm_hist[i] < 0.03:
             norm_hist[i] = 0
     return norm_hist
 
@@ -85,6 +89,14 @@ def find_valleys(H):
         elif H[i] == H[i-1] and H[i] == H[i+1]:
             probs[i] = probs[i-1]
             costs[i] = probs[i-1]
+
+    # for i in range(1, hsize-1):
+    #     if H[i-1]+H[i]+H[i+1]<100:
+    #         probs[i]=0
+    #     elif H[i-1]+H[i]+H[i+1]>=100:
+    #         probs[i]=100
+    #     probs[0]=probs[31]=0
+
     for i in range(1, hsize-1):
         if probs[i] != 0:
             # floor devision. if > 100 = 1, else 0
