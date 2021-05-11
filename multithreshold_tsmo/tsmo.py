@@ -51,7 +51,7 @@ def otsu_method(hist):
     return optimum_value, max_variance
 
 
-def normalised_histogram_binning(hist, M=64, L=256):
+def normalised_histogram_binning(hist, M=128, L=256):
     norm_hist = np.zeros((M, 1), dtype=np.float32) # 0으로 초기화
     N = L // M # L: 전체 gray level 수, M: bin group 수, N: 하나의 bin qruop에 묶이는 level 수
     counters = [range(x, x+N) for x in range(0, L, N)] # bin group 수와 동일 (N=8 -> C0[0:8]-C31[248:256])
@@ -63,7 +63,7 @@ def normalised_histogram_binning(hist, M=64, L=256):
 
     for i in range(0, M):
 
-        print(norm_hist[i])
+      #  print(norm_hist[i])
 
         if norm_hist[i] < 0.02:
             norm_hist[i] = 0
@@ -109,7 +109,7 @@ def find_valleys(H):
     return valleys
 
 
-def valley_estimation(hist, M=64, L=256):
+def valley_estimation(hist, M=128, L=256):
     # Normalised histogram binning
     norm_hist = normalised_histogram_binning(hist, M, L)
     valleys = find_valleys(norm_hist) # valley 리스트 반환 => valley 수=리스트 length
@@ -129,7 +129,7 @@ def threshold_valley_regions(hist, valleys, N):
     return thresholds
 
 
-def modified_TSMO(hist, M=64, L=256):
+def modified_TSMO(hist, M=128, L=256):
     N = L // M
     valleys = valley_estimation(hist, M, L)
     thresholds = threshold_valley_regions(hist, valleys, N)
