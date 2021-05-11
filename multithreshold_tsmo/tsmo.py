@@ -129,7 +129,7 @@ def threshold_valley_regions(hist, valleys, N):
     return thresholds
 
 
-def modified_TSMO(hist, M=128, L=256):
+def modified_TSMO(hist, M=64, L=256):
     N = L // M
     valleys = valley_estimation(hist, M, L)
     thresholds = threshold_valley_regions(hist, valleys, N)
