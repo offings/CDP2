@@ -65,7 +65,7 @@ def normalised_histogram_binning(hist, M=64, L=256):
 
         print(norm_hist[i])
 
-        if norm_hist[i] < 0.03:
+        if norm_hist[i] < 0.02:
             norm_hist[i] = 0
     return norm_hist
 

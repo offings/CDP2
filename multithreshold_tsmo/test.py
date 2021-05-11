@@ -30,7 +30,7 @@ def show_thresholds(src_img, dst_img, thresholds):
 
     return dst_img
 
-def main(path='../Feature Point Detection/second_step/33.jpg'):
+def main(path='../Feature Point Detection/second_step/20.jpg'):
     L = 256  # number of levels
     M = 64  # number of bins for bin-grouping normalisation
 
@@ -55,7 +55,7 @@ def main(path='../Feature Point Detection/second_step/33.jpg'):
     img_1 = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
     img_auto = img_1.copy()
 
-    show_thresholds(img, img_1, thresholds[0:3])
+    show_thresholds(img, img_1, thresholds[0:4])
     show_thresholds(img, img_auto, thresholds)
 
     plt.figure()
@@ -64,7 +64,8 @@ def main(path='../Feature Point Detection/second_step/33.jpg'):
     plt.imshow(img, cmap='gray')
     ax = plt.subplot(1, 3, 2)
     ax.set_title('{} levels (Automatic)'.format(len(thresholds)))
-    cv2.imwrite('first_result/output_33.jpg', img_auto)
+    cv2.imwrite('second_result/20(auto).jpg', img_auto)
+    cv2.imwrite('second_result/20.jpg', img_1)
     plt.imshow(img_auto)
     ax = plt.subplot(1, 3, 3)
     ax.set_title('3 levels')
