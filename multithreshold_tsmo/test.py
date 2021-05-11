@@ -74,7 +74,7 @@ def main(path='../Feature Point Detection/second_step/7.jpg'):
     plt.imshow(img, cmap='gray')
     ax = plt.subplot(1, 3, 2)
     ax.set_title('{} levels (Automatic)'.format(len(thresholds)))
-    cv2.imwrite('second_result/output_7.jpg', img_auto)
+    cv2.imwrite('third_result/7.jpg', img_auto)
     plt.imshow(img_auto, cmap='gray')
     ax = plt.subplot(1, 3, 3)
     ax.set_title('3 levels')
