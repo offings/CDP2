@@ -11,7 +11,7 @@ MASK_ERODE_ITER = 5
 MASK_COLOR = (1.0,1.0,1.0) # In BGR format
 
 #-- Read image
-img = cv2.imread('first_step/21.jpg')
+img = cv2.imread('back.BMP')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #-- Edge detection
@@ -32,7 +32,7 @@ contour_info = sorted(contour_info, key=lambda c: c[2], reverse=True)
 #final_contour = [[x for x in contour_info[2][0] if x not in contour_info[0][0]], contour_info[0][1], contour_info[2][2] - contour_info[0][2]]
 for lst in contour_info :
     print(lst[2])
-final_contour = contour_info[2]
+final_contour = contour_info[1]
 
 #-- Create empty mask, draw filled polygon on it corresponding to largest contour ----
 # Mask is black, polygon is white
