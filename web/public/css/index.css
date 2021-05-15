@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+@import url(https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap);
+
+html{ 
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+#form{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 50px;
+    left: 41%;
+}
+#contour{
+    margin-top: 25px;
+    height: 40px;
+    float: left;
+}
+#circle{
+    margin-top: 25px;
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+}
+#angle{
+    margin-top: 25px;
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+}
+#line{
+    margin-top: 100px;
+}
+h2{
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 0;
+    font-family: 'Amatic SC', cursive;
+}
+#project_info{
+    font-size: 25px;
+    margin-top: 120px;
+    margin-left: 600px;
+    position:absolute;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+#system_config{
+    margin-top: 250px;
+    margin-left: 400px;
+}
+#image_table{
+    margin-top: 150px;
+    margin-left: 450px;
+    text-align: center;
+    font-size: 50px;
+}
+#text_table{
+    margin-left: 450px;
+    text-align: center;
+    height: 30px;
+    font-size: 50px;
+}
+#submitbtn{
+    font-size: 35px;
+    margin-top: 5px;
+}
+#submit{
+    border: 0;
+    background-color: white;
+}
+footer{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    left: 43%;
+    position:absolute;
+    bottom:10px;
+}

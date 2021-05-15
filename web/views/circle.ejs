@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CDP2_TEAM7</title>
+        <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <h2>Image Analysis & Feature Point Detection AI</h2>
+        <div id="form">
+            <div id="contour">
+                <a href="/contour/what">Contour | </a>
+            </div>
+            <div id="circle">
+                <a href="/circle/what">Circle | </a>
+            </div>
+            <div id="angle">
+                <a href="/angle/what">Angle</a>
+            </div>
+        </div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <table id="image_table" border="1">
+                <tr>
+                    <td style="width: 500px; height: 500px;">
+                        <label id="loadbtn" for="image">Click here to load image</label>
+                        <input type="file" id="image" name="upload" style="display: none;"><br>
+                        <label id="submitbtn" for="submit">Submit</label>
+                        <input type="submit" id="submit" style="display: none;">
+                    </td>
+                    <td style="width: 500px; height: 500px;">processing result</td>
+                </tr>
+            </table>
+        </form>
+        <table id="text_table">
+            <tr>
+                <td style="width: 500px;" id="before">before</td>
+                <td style="width: 500px;" id="after">after</td>
+            </tr>
+        </table>
+        <footer>
+            <small>&copy; KNU CDP2_TEAM7 & NGarden &reg; 2021</small>
+        </footer>
+    </body>
+</html> 
