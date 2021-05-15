@@ -17,9 +17,10 @@ def main(path='../Feature Point Detection/1024_noise/3.jpg'):
             if gray[i][j] < low :
                 out[i][j] = 0
             elif gray[i][j] > high :
-                out[i][j] = 255
-            else :
-                out[i][j] = ((gray[i][j] - MIN) * 255) / (MAX - MIN)
+                out[i][j] = high
+            # else :
+            #     out[i][j] = ((gray[i][j] - MIN) * 255) / (MAX - MIN)
+    cv2.normalize(out, out, 0, 255, cv2.NORM_MINMAX)
     cv2.imshow('orignal', gray)
     cv2.imshow('end_in', out)
 
