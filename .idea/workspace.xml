@@ -2,12 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92deeb32-71f6-47bc-9064-7ff49f1bb522" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/tsmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/tsmo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/tsmo_output.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/tsmo_output.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreshold/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +60,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/multithreshold" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LG\OneDrive\바탕 화면\CDP2\multithreshold" />
       <recent name="C:\Users\LG\OneDrive\바탕 화면\CDP2\multithreshold_tsmo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test (1)">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CDP2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\LG\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multithreshold" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multithreshold/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CDP2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,8 +111,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.test (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -79,32 +134,15 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="447" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620706591486">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="447" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1620706591486" />
-    <state x="731" y="167" key="FileChooserDialogImpl" timestamp="1620706056307">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="731" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620706056307" />
-    <state width="931" height="201" key="GridCell.Tab.0.bottom" timestamp="1620706899191">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="931" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620706899191" />
-    <state width="931" height="201" key="GridCell.Tab.0.center" timestamp="1620706899190">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="931" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620706899190" />
-    <state width="931" height="201" key="GridCell.Tab.0.left" timestamp="1620706899190">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="931" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620706899190" />
-    <state width="931" height="201" key="GridCell.Tab.0.right" timestamp="1620706899191">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="931" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620706899191" />
   </component>
 </project>
