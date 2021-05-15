@@ -1,10 +1,9 @@
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
-from PIL import Image
+import matplotlib.pyplot as plt
 
 def multithreshold(img):
-    thresholds = [115]
+    thresholds = [23, 120]
     masks = np.zeros((len(thresholds) + 1, img.shape[0], img.shape[1]), bool)
     for i, t in enumerate(sorted(thresholds)):
         masks[i+1] = (img > t)
@@ -30,37 +29,45 @@ def show_thresholds(src_img, dst_img):
 
 def main(path='cropped.jpg'):
     L = 256  # number of levels
-
     img = cv2.imread(path, 0)  # read image in as grayscale
+    #print(img.shape) # print pixel size
+
+    np.savetxt('pixel.txt', img, fmt = "%d", delimiter=' ')
+    min = np.amin(img)
+    max = np.amax(img)
+
+    scaled_img = img.copy()
+    for i in range(0, img.shape[0]):
+        for j in range(0, img.shape[1]):
+           scaled_img[i][j] = (img[i][j] - min) / (max - min) * 255
 
     #Calculate histogram
-
-
-
-    res=cv2.equalizeHist(img)
-    np.savetxt('pixel.txt', res, fmt="%d", delimiter=' ')
-
-    show_thresholds(res, res)
-
     hist = cv2.calcHist(
-        [res],
+        [scaled_img],
         channels=[0],
         mask=None,
         histSize=[L],
         ranges=[0, L]
     )
+
+    dst = scaled_img.copy()
+    multithreshold(dst)
     plt.figure()
     plt.bar(range(0, hist.shape[0]), hist.ravel())
 
+    show_thresholds(scaled_img, dst)
 
     plt.figure()
-    plt.imshow(res, cmap='gray')
+    ax = plt.subplot(1, 3, 1)
+    ax.set_title('Original image')
+    plt.imshow(img, cmap='gray')
+    ax = plt.subplot(1, 3, 2)
+    ax.set_title('Scaled-up image')
+    plt.imshow(scaled_img, cmap='gray')
+    ax = plt.subplot(1, 3, 3)
+    ax.set_title('Threshold image')
+    plt.imshow(dst, cmap='gray')
     plt.show()
-
-
-
-
-
 
 
 if __name__ == '__main__':
