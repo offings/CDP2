@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="92deeb32-71f6-47bc-9064-7ff49f1bb522" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/first_result/output_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/tsmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/tsmo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold_tsmo/tsmo_output.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold_tsmo/tsmo_output.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
