@@ -1,7 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
+from PIL import Image
 
-def main(path='1024_noise/2.jpg'):
+def main(path='1024_noise/7.jpg'):
     L = 256  # number of levels
 
     img = cv2.imread(path, 0)  # read image in as grayscale
