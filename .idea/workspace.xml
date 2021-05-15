@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92deeb32-71f6-47bc-9064-7ff49f1bb522" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/1024_noise/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreshold/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreshold/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,6 +1,5 @@
 import cv2
 import matplotlib.pyplot as plt
-import numpy as np
 
 def main(path='1024_noise/2.jpg'):
     L = 256  # number of levels
