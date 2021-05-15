@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="92deeb32-71f6-47bc-9064-7ff49f1bb522" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hole_detecting_ver2/test.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multithreshold/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/multithreshold/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hole_detecting_ver2/cropped.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/hole_detecting_ver2/cropped.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hole_detecting_ver2/mouse_drag.py" beforeDir="false" afterPath="$PROJECT_DIR$/hole_detecting_ver2/mouse_drag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hole_detecting_ver2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/hole_detecting_ver2/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +49,38 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/multithreshold" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hole_detecting_ver2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\WIN10\Documents\GitHub\CDP2\hole_detecting_ver2" />
+      <recent name="C:\Users\WIN10\Documents\GitHub\CDP2\multithreshold_v2" />
       <recent name="C:\Users\LG\OneDrive\바탕 화면\CDP2\multithreshold" />
       <recent name="C:\Users\LG\OneDrive\바탕 화면\CDP2\multithreshold_tsmo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Python.test (3)">
+    <configuration name="mouse_drag" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CDP2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hole_detecting_ver2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hole_detecting_ver2/mouse_drag.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CDP2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,6 +94,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multithreshold/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CDP2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/multithreshold_v2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multithreshold_v2/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CDP2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hole_detecting_ver2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hole_detecting_ver2/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,9 +168,15 @@
     <list>
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.test (2)" />
+      <item itemvalue="Python.test (3)" />
+      <item itemvalue="Python.mouse_drag" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (3)" />
+        <item itemvalue="Python.mouse_drag" />
+        <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
       </list>
@@ -112,5 +204,42 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621062869675">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="89" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1621062869675" />
+    <state width="900" height="201" key="GridCell.Tab.0.bottom" timestamp="1621063458415">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="900" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621063458415" />
+    <state width="900" height="201" key="GridCell.Tab.0.center" timestamp="1621063458414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="900" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621063458414" />
+    <state width="900" height="201" key="GridCell.Tab.0.left" timestamp="1621063458414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="900" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621063458414" />
+    <state width="900" height="201" key="GridCell.Tab.0.right" timestamp="1621063458415">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="900" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621063458415" />
+    <state x="842" y="0" width="708" height="566" key="dock-window-1" timestamp="1621057166743">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="842" y="0" width="708" height="566" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1621057166743" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hole_detecting_ver2/mouse_drag.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

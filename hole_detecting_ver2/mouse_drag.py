@@ -35,10 +35,10 @@ def onMouse(event,x,y,flags,param):     # 마우스 이벤트 핸들 함수  ---
                 cv2.imwrite('./cropped.jpg', roi)   # ROI 영역만 파일로 저장 ---⑦
                 print("croped.")
             else:
-                cv2.imshow('img', img)  # 드래그 방향이 잘못된 경우 사각형 그림ㅇㅣ 없는 원본 이미지 출력
+                cv2.imshow('img', img)  # 드래그 방향이 잘못된 경우 사각형 그림이 없는 원본 이미지 출력
                 print("좌측 상단에서 우측 하단으로 영역을 드래그 하세요.")
 
-img = cv2.imread('1024_noise/7.jpg')
+img = cv2.imread('test.jpg')
 img = cv2.resize(img, dsize = (800, 800), interpolation=cv2.INTER_AREA)
 cv2.imshow('img', img)
 cv2.setMouseCallback('img', onMouse) # 마우스 이벤트 등록 ---⑧
