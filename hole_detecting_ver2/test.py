@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def multithreshold(img):
-    thresholds = [23, 120]
+    thresholds = [24,120]
     masks = np.zeros((len(thresholds) + 1, img.shape[0], img.shape[1]), bool)
     for i, t in enumerate(sorted(thresholds)):
         masks[i+1] = (img > t)
@@ -30,9 +30,9 @@ def show_thresholds(src_img, dst_img):
 def main(path='cropped.jpg'):
     L = 256  # number of levels
     img = cv2.imread(path, 0)  # read image in as grayscale
+
     #print(img.shape) # print pixel size
 
-    np.savetxt('pixel.txt', img, fmt = "%d", delimiter=' ')
     min = np.amin(img)
     max = np.amax(img)
 
@@ -50,6 +50,9 @@ def main(path='cropped.jpg'):
         ranges=[0, L]
     )
 
+    percent_50 = np.percentile(scaled_img, 25)
+    print(percent_50)
+
     dst = scaled_img.copy()
     multithreshold(dst)
     plt.figure()
@@ -64,11 +67,12 @@ def main(path='cropped.jpg'):
     ax = plt.subplot(1, 3, 2)
     ax.set_title('Scaled-up image')
     plt.imshow(scaled_img, cmap='gray')
+    np.savetxt('pixel.txt', scaled_img, fmt = "%d", delimiter=' ')
     ax = plt.subplot(1, 3, 3)
     ax.set_title('Threshold image')
     plt.imshow(dst, cmap='gray')
+    cv2.imwrite('threshold_img.jpg',dst)
     plt.show()
-
 
 if __name__ == '__main__':
     main()
