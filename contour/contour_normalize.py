@@ -45,11 +45,13 @@ for area in range(len(contour_info)) :
 
 print("result")
 
+# 원하는 area size만큼의 contour들을 draw하고 해당 index와 area size를 출력하는 부분
 for area in range(len(contour_info)) :
     if(contour_info[area][2] <= 1100.0 and contour_info[area][2] >= 200.0) :
         print(area, contour_info[area][2])
         cv2.drawContours(img, contour_info[area], 0, (0, 0, 255), 5)
 
+# 전체 contour를 그리는 코드(해당 코드는 contour들이 sorting되어있지 않음)
 # for i in range(len(contours)) :
 #     cv2.drawContours(img, [contours[i]], 0, (0, 0, 255), 5)
 
