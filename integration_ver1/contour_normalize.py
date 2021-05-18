@@ -1,15 +1,19 @@
 import cv2
-from numpy import percentile
-import imutils
 import matplotlib.pyplot as plt
 import numpy as np
 
+#define path
+def path(num):
+    if num == 1 :
+        return '../background_ver2/image/first_output/22.jpg'
+    if num == 2 :
+        return '../background_ver2/image/second_output/22.jpg'
+
 def detect_screw():
-    img = cv2.imread('image/second_output/25.jpg')
+    img = cv2.imread(path(2))
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
     height, width = gray.shape
-    # print(height, width)
 
     ret, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
     binary = cv2.bitwise_not(binary)
@@ -32,15 +36,11 @@ def detect_screw():
             cv2.contourArea(c),
         ])
     contour_info = sorted(contour_info, key=lambda c: c[2], reverse=True)
-
-    # for area in range(len(contour_info)):
-    #     print(contour_info[area][2])
-
     cv2.drawContours(img, contour_info[0], 0, (0, 0, 255), 5)
 
     x_screw = []
     y_screw = []
-    # print("\nresult")
+
     for i in range(len(contour_info[0][0])):
         x, y = contour_info[0][0][i][0]
         x_screw.append(x)
@@ -51,22 +51,13 @@ def detect_screw():
     screw = list(zip_list).copy()
     # print(screw)
 
-    #
-    # # src = imutils.resize(img, width=800)
     cv2.imwrite("contour.jpg", img)
-    # cv2.imshow("src", img)
-    # plt.figure()
-    # plt.imshow(img, cmap = "gray")
-    # plt.show()
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
     return screw
 
 def multithreshold(img, x, y):
     thresholds = []
     thresholds.append(x)
     thresholds.append(y)
-    print(thresholds)
 
     masks = np.zeros((len(thresholds) + 1, img.shape[0], img.shape[1]), bool)
     for i, t in enumerate(sorted(thresholds)):
@@ -91,14 +82,9 @@ def show_thresholds(src_img, dst_img):
 
     return dst_img
 
-# def main(path='./second_output/7.jpg'):
-
-#
-# if __name__ == '__main__':
-#     main()
-
-img = cv2.imread('image/first_output/25.jpg')
-out = cv2.imread('image/second_output/31.jpg')
+# main start
+img = cv2.imread(path(1))
+out = cv2.imread(path(2))
 out = cv2.cvtColor(out, cv2.COLOR_RGB2GRAY)
 output = np.array(out)
 
@@ -135,24 +121,24 @@ y_list = []
 # 원하는 area size만큼의 contour들을 draw하고 해당 index와 area size를 출력하는 부분
 for area in range(len(contour_info)) :
     if(contour_info[area][2] <= 1100.0 and contour_info[area][2] >= 200.0) :
-       # print(str(contour_info[area][2])+"("+str(area)+")")
-       # print(contour_info[area][0])
         cv2.drawContours(img, contour_info[area], 0, (0, 0, 255), 5)
-        re_area+=1
-        if (re_area==2):
+        re_area += 1
+        if (re_area == 2):
             x_origin, y_origin = contour_info[area][0][0][0]
             # print(x_origin, y_origin)
             for i in range(len(contour_info[area][0])):
                 x,y=contour_info[area][0][i][0]
+                #print(x, y)
                 x_list.append(x)
                 y_list.append(y)
-                if (x==x_origin):
-                    y_max = max(y_list)
-                center_x = int((min(x_list) + max(x_list))/2)
-                center_y = int((y_origin + y_max)/2)
-                cir_x = center_x - 18
-            # print(max(x_list), min(x_list), y_max)
-            # print(center_x, center_y)
+
+            x_min, y_min = x_list[np.argmin(y_list)], min(y_list)
+            x_max, y_max = x_list[np.argmax(y_list)], max(y_list)
+            center_x = int((x_min + x_max)/2)
+            center_y = int((y_min + y_max)/2)
+            cir_x = center_x - 18
+            print('x_max : {}, y_max : {}, x_min : {}, y_min : {}' .format(x_max, y_max, x_min, y_min))
+            print('center_x : {}, center_y : {}'.format(center_x, center_y))
             break
 
 screw_result = []
@@ -167,14 +153,10 @@ y_mid = int((y_line + y_max)/2)
 cv2.imwrite("contour.jpg", img)
 
 L = 256  # number of levels
-path='image/second_output/25.jpg'
-img2 = cv2.imread(path, 0)  # read image in as grayscale
-
-# print(img.shape) # print pixel size
+img2 = cv2.imread(path(2), 0)  # read image in as grayscale
 
 min = np.amin(img2)
 max = np.amax(img2)
-print(min, max)
 scaled_img = img2.copy()
 for i in range(0, img2.shape[0]):
     for j in range(0, img2.shape[1]):
@@ -183,8 +165,8 @@ for i in range(0, img2.shape[0]):
 temp1 = scaled_img[center_y][center_x]
 temp2 = scaled_img[center_y][cir_x]
 temp3 = scaled_img[y_mid][x_origin]
-print(temp1, temp2, temp3)
-print(center_y, center_x, cir_x, y_mid, x_origin)
+print('temp1 : {}, temp2 : {}, temp3 : {}'.format(temp1, temp2, temp3))
+#print(center_y, center_x, cir_x, y_mid, x_origin)
 
 x = int((temp1 + temp3)/2)
 y = int((temp2 + temp3)/2)
@@ -200,6 +182,7 @@ hist = cv2.calcHist(
 
 dst = scaled_img.copy()
 multithreshold(dst, x, y)
+print('thresholds : ', x, y)
 plt.figure()
 plt.bar(range(0, hist.shape[0]), hist.ravel())
 
@@ -212,7 +195,7 @@ plt.imshow(img2, cmap='gray')
 ax = plt.subplot(1, 3, 2)
 ax.set_title('Scaled-up image')
 plt.imshow(scaled_img, cmap='gray')
-np.savetxt('pixel.txt', scaled_img, fmt="%d", delimiter=' ')
+#np.savetxt('pixel.txt', scaled_img, fmt="%d", delimiter=' ')
 ax = plt.subplot(1, 3, 3)
 ax.set_title('Threshold image')
 plt.imshow(dst, cmap='gray')
