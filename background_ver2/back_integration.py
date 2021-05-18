@@ -11,7 +11,7 @@ for i in range(33) :
         MAX = img.max()
         out = img.copy()
         low = MIN
-        high = 100
+        high = 60
         for j in range(width):
             for k in range(height):
                 if img[j][k] < low:
@@ -20,7 +20,10 @@ for i in range(33) :
                     out[j][k] = high
                 # else:
                 #     out[j][k] = ((gray[j][k] - MIN) * 255) / (MAX - MIN)
-        cv2.normalize(out, out, 0, 255, cv2.NORM_MINMAX)
+        lower = percentile(out, 0)
+        higher = percentile(out, 100)
+        cv2.normalize(out, out, lower, higher + 50, cv2.NORM_MINMAX)
+        img = cv2.GaussianBlur(out, (5, 5), 0)
         cv2.imwrite('image/first_output/'+str(i+1)+'.jpg', out)
     else :
         lower = percentile(img, 0)
@@ -43,7 +46,7 @@ for i in range(33) :
     CANNY_THRESH_2 = 100
     MASK_DILATE_ITER = 5
     MASK_ERODE_ITER = 5
-    MASK_COLOR = (1.0,1.0,1.0) # In BGR format
+    MASK_COLOR = (1.0, 1.0, 1.0) # In BGR format
 
     #-- Read image
     img = cv2.imread('image/first_output/'+str(i+1)+'.jpg')
@@ -68,15 +71,12 @@ for i in range(33) :
     #final_contour = [[x for x in contour_info[2][0] if x not in contour_info[0][0]], contour_info[0][1], contour_info[2][2] - contour_info[0][2]]
     # for lst in contour_info :
     #     print(lst[2])
-    if (i==30) :
-        final_contour = contour_info[3]
-    else :
-        final_contour = contour_info[2]
+    final_contour = contour_info[2]
 
     #-- Create empty mask, draw filled polygon on it corresponding to largest contour ----
     # Mask is black, polygon is white
     mask = np.zeros(edges.shape)
-    cv2.fillConvexPoly(mask, final_contour[0], (255))
+    cv2.fillConvexPoly(mask, final_contour[0], (255, 255, 255))
 
     #-- Smooth mask, then blur it
     mask = cv2.dilate(mask, None, iterations=MASK_DILATE_ITER)
