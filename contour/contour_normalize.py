@@ -4,8 +4,8 @@ import imutils
 import matplotlib.pyplot as plt
 import numpy as np
 
-img = cv2.imread('image/first_output/33.jpg')
-out = cv2.imread('image/second_output/33.jpg')
+img = cv2.imread('image/first_output/31.jpg')
+out = cv2.imread('image/second_output/31.jpg')
 out = cv2.cvtColor(out, cv2.COLOR_RGB2GRAY)
 output = np.array(out)
 
@@ -47,7 +47,7 @@ print("result")
 
 # 원하는 area size만큼의 contour들을 draw하고 해당 index와 area size를 출력하는 부분
 for area in range(len(contour_info)) :
-    if(contour_info[area][2] <= 1100.0 and contour_info[area][2] >= 200.0) :
+    if(contour_info[area][2] <= 1100.0 and contour_info[area][2] >= 500.0) :
         print(area, contour_info[area][2])
         cv2.drawContours(img, contour_info[area], 0, (0, 0, 255), 5)
 
