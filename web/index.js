@@ -33,7 +33,7 @@ app.get('/angle/:something', function(req,res){
   res.render('angle',{data:something}); 
 });
 
-app.post('/upload', function (req, res) {
+app.post('/contour_upload', function (req, res) {
   var name = "";
   var form = new formidable.IncomingForm();
 
