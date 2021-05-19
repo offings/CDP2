@@ -6,17 +6,13 @@
     </head>
     <body>
         <h2>Image Analysis & Feature Point Detection AI</h2>
-        <div id="form">
-            <div id="contour">
-                <a href="/contour/what">Contour | </a>
-            </div>
-            <div id="circle">
-                <a href="/circle/what">Circle | </a>
-            </div>
-            <div id="angle">
-                <a href="/angle/what">Angle</a>
-            </div>
-        </div>
+        <ul id="nav">
+            <li id="contour"><a href="/contour/what">Contour</a></li>
+            <li> | </li>
+            <li id="circle"><a href="/circle/what">Circle</a></li>
+            <li> | </li>
+            <li id="angle"><a href="/angle/what">Angle</a></li>
+        </ul>
         <form action="/upload" method="POST" enctype="multipart/form-data">
             <table id="image_table" border="1">
                 <tr>
