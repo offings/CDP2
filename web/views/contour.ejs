@@ -11,8 +11,6 @@
     <ul id="nav">
         <li id="contour"><a href="/contour/what">Contour</a></li>
         <li> | </li>
-        <li id="circle"><a href="/circle/what">Circle</a></li>
-        <li> | </li>
         <li id="angle"><a href="/angle/what">Angle</a></li>
     </ul>
     <form action="/upload" method="POST" enctype="multipart/form-data">
@@ -23,9 +21,11 @@
                     <input type="file" id="image" name="upload" style="display: none;"><br>
                     <label id="submitbtn" for="submit">Submit</label>
                     <input type="submit" id="submit" style="display: none;">
+                    <img id="file_image" src=<%= final_file %>>
                 </td>
                 <td style="width: 500px; height: 500px;">
                     processing result
+                    <img id="file_image" src=<%= result_file %>>
                 </td>
             </tr>
         </table>

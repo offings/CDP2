@@ -80,3 +80,12 @@ footer{
     font-family: 'Oswald', sans-serif;
     bottom:10px;
 }
+#file_image {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 400px;
+}
