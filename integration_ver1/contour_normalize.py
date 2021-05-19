@@ -124,8 +124,6 @@ for area in range(len(contour_info)) :
         cv2.drawContours(img, contour_info[area], 0, (0, 0, 255), 5)
         re_area += 1
         if (re_area == 2):
-            x_origin, y_origin = contour_info[area][0][0][0]
-            # print(x_origin, y_origin)
             for i in range(len(contour_info[area][0])):
                 x,y=contour_info[area][0][i][0]
                 #print(x, y)
@@ -144,11 +142,12 @@ for area in range(len(contour_info)) :
 screw_result = []
 screw_result = detect_screw()
 
+y_mid = 0
 for i in range(len(screw_result)):
-    if(screw_result[i][0] == x_origin and screw_result[i][1] > y_max):
-        x_line = x_origin
+    if(screw_result[i][0] == x_max and screw_result[i][1] > y_max):
+        x_line = x_max
         y_line = screw_result[i][1]
-y_mid = int((y_line + y_max)/2)
+        y_mid = int((y_line + y_max) / 2)
 
 cv2.imwrite("contour.jpg", img)
 
@@ -164,7 +163,7 @@ for i in range(0, img2.shape[0]):
 
 temp1 = scaled_img[center_y][center_x]
 temp2 = scaled_img[center_y][cir_x]
-temp3 = scaled_img[y_mid][x_origin]
+temp3 = scaled_img[y_mid][x_max]
 print('temp1 : {}, temp2 : {}, temp3 : {}'.format(temp1, temp2, temp3))
 #print(center_y, center_x, cir_x, y_mid, x_origin)
 
