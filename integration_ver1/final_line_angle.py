@@ -21,7 +21,7 @@ cv2.normalize(img_gray, img_gray, lower-100, higher+100, cv2.NORM_MINMAX)
 
 img_edges = cv2.Canny(img_gray, 10, 100)
 # HoughLines를 통해 이미지의 선 감지
-lines = cv2.HoughLinesP(img_edges, 1, math.pi / 180.0, 100, minLineLength=70, maxLineGap=5)
+lines = cv2.HoughLinesP(img_edges, 1, math.pi / 180.0, 100, minLineLength=60, maxLineGap=5)
 
 angles = []
 

@@ -89,6 +89,15 @@ footer{
     width:  350px;
     height: 350px;
 }
+#angle_value {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width:  350px;
+    height: 250px;
+}
 #img_txt{
     display: inline-block;
     width: 500px;
