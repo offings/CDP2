@@ -13,18 +13,22 @@
         <li> | </li>
         <li id="angle"><a href="/angle/what">Angle</a></li>
     </ul>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <form action="/contour_upload" method="POST" enctype="multipart/form-data">
         <table id="image_table" border="1">
             <tr>
                 <td style="width: 500px; height: 500px;">
-                    <label id="loadbtn" for="image">Click here to load image</label>
-                    <input type="file" id="image" name="upload" style="display: none;"><br>
-                    <label id="submitbtn" for="submit">Submit</label>
-                    <input type="submit" id="submit" style="display: none;">
+                    <div id="img_txt">
+                        <label id="loadbtn" for="image">Click here to load image</label>
+                        <input type="file" id="image" name="upload" style="display: none;"><br>
+                        <label id="submitbtn" for="submit">Submit</label>
+                        <input type="submit" id="submit" style="display: none;">
+                    </div>
                     <img id="file_image" src=<%= final_file %>>
                 </td>
                 <td style="width: 500px; height: 500px;">
-                    processing result
+                    <div id="img_txt">
+                        processing result
+                    </div>
                     <img id="file_image" src=<%= result_file %>>
                 </td>
             </tr>
