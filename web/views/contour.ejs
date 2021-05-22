@@ -7,7 +7,14 @@
 </head>
 
 <body>
-    <h2>Image Analysis & Feature Point Detection AI</h2>
+    <h2 id="title"><a href="/">Image Analysis & Feature Point Detection AI</a></h2>
+    <style>
+        a { text-decoration: none; color: black; }
+        a:visited { text-decoration: none; }
+        a:hover { text-decoration: none; }
+        a:focus { text-decoration: none; }
+        a:hover, a:active { text-decoration: none; }
+    </style>
     <ul id="nav">
         <li id="contour"><a href="/contour/what">Contour</a></li>
         <li> | </li>
@@ -23,13 +30,13 @@
                         <label id="submitbtn" for="submit">Submit</label>
                         <input type="submit" id="submit" style="display: none;">
                     </div>
-                    <img id="file_image" src=<%= final_file %>>
+                    <img id="file_image" onerror="this.src='/images/white_back.jpg'" src=<%= final_file %>>
                 </td>
                 <td style="width: 500px; height: 500px;">
                     <div id="img_txt">
                         processing result
                     </div>
-                    <img id="file_image" src=<%= result_file %>>
+                    <img id="file_image" onerror="this.src='/images/white_back.jpg'" src=<%= result_file %>>
                 </td>
             </tr>
         </table>
