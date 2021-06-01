@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 def accuracy_test_ver2() :
-    for index in range(1, 32):
+    for index in range(1, 34):
         print('index', index)
         img = cv2.imread('real_final/{}.jpg'.format(index))
         img1 = img.copy()
