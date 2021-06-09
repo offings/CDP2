@@ -104,3 +104,17 @@ footer{
     width: 500px;
     height: 130px;
 }
+
+#title a {
+    text-decoration: none; 
+    color: black; 
+}
+
+#nav a {
+    text-decoration: none; 
+    color: #333;
+}
+
+#nav .active {
+    color: black;
+}
